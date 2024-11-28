@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/モグモグパイモン.png">
+	<title>PiyoOyip:Blue</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+	<style>
+		/* コンテナと行のマージン、パディングをリセット */
+		.container{
+			padding: 0;
+		}
+		.animated-border{
+			position: relative;
+			padding: 20px;
+			border: 4px dashed transparent;
+			border-image: linear-gradient(90deg, #6a5acd, #00fa9a, #ff4500);
+			border-image-slice: 1;
+			animation: dash-move 2s infinite linear;
+		}
+		@keyframes dash-move {
+			from {
+				border-image-source: linear-gradient(90deg, #6a5acd, #00fa9a, #ff4500);
+			}
+			to {
+				border-image-source: linear-gradient(90deg, #ff4500, #6a5acd, #00fa9a);
+			}
+		}
+		.row {
+			margin: 0;
+		}
+		.col-md-6 {
+			padding: 0;
+		}
+		.icon-container {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+			border-radius: 50%; /* 丸い枠にする */
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        /* 動く画像のスタイル */
+        .moving-icon {
+            position: absolute;
+            width: 50px; /* 画像の幅 */
+            height: 50px; /* 画像の高さ */
+        }
+		.nav-icon {
+			width: 30px;  /* 必要に応じてサイズ調整 */
+			height: 30px;
+		}
+
+		.nav-link .black-text {
+			margin-left: 5px;  /* アイコンとテキストの間隔を調整 */
+		}
+
+		#jjj {
+			margin: 0 auto; /* コンテンツを中央に */
+			padding: 0; /* 内部余白をリセット */
+			max-width: 100%; /* 画面幅に合わせる */
+		}
+	</style>
+</head>
+<body>
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-dark navbar-expand-sm">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./images/モグモグパイモン.png" ><span class="black-text">my_portfolio</span>
+				</a>
+				<!-- CollapseMenu(Button) -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#targetCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- CollapseMenu(Links) -->
+				<div class="collapse navbar-collapse justify-content-end" id="targetCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item d-flex align-items-center">
+							<a class="nav-link d-flex align-items-center" href="#">
+								<img src="images/HACHIWARE.png" alt="Home Icon" class="nav-icon" />
+								<span class="black-text ms-2">Home</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#my_portfolio">
+							  <span class="black-text">
+								<img src="images/GURASANHACHIWARE.png" class="nav-icon">
+								Portfolio
+							  </span>
+							</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#my_about">
+							  <span class="black-text">
+								<img src="images/CHIKAWA.png" alt="Image" class="nav-icon">
+								About
+							  </span>
+							</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#my_content">
+							  <span class="black-text">
+								<img src="images/GURASANCHIKAWA.png" alt="Image" class="nav-icon">
+								contact
+							  </span>
+							</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#shooting-game">
+							  <span class="black-text">
+								<img src="images/緑ボンプ.png" alt="Image" class="nav-icon">
+								shooting-game
+							  </span>
+							</a>
+						  </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+		<div class="text-center" id="my_key">
+			<div class="d-flex flex-column align-items-center custom-bg">
+				<h1 class="black-text">My_portfolio</h1>
+				<h3 class="black-text">日常生活でしているゲーム紹介</h3>
+				<h6 class="black-text">Web gamear</h6>
+			</div>
+		</div>
+
+		<div class="container fade-in-out animated-border" id="jjj">
+			<div class="container fade-in-out" id="my_portfolio" style="padding: 0px; max-width: 100%; ">
+				<div class="container text-center animated-border" style=" max-width: 100%;">
+					<div class="row justify-content-center">
+						<div class="col-sm-3">
+							<div class="card bg-transparent border-0" style="max-width: 20rem;">
+								<img src="images/A.png">
+								<div class="card-body">
+									<h4 class="card-title">APEX</h4>
+									<p class="card-text">普段はこのゲームをしている。対戦ゲームではかなり有名で一度は聞いたことあるともいます。それなりに楽しいです。ただし、チーターが割と多いです。</p>
+								</div>
+							</div>
+						</div>
+						<!--CSS-->
+						<div class="col-sm-3">
+							<div class="card bg-transparent border-0" style="max-width: 20rem;">
+								<img src="images/O.png">
+								<div class="card-body">
+									<h4 class="card-title">OVERWACHI</h4>
+									<p class="card-text">このゲームをやると大体の人はどのゲームでも上手くなります（多分）。理由は、チームで協力したり連携したりなどあらゆる場所で仲間とのコミュニケーションを必要とするからです。ただし、だんだん試合の後半になるにつれストレスが溜まり味方のせいにする場合もあります。</p>
+								</div>
+							</div>
+						</div>
+						<!--JavaScript-->
+						<div class="col-sm-3">
+							<div class="card bg-transparent border-0" style="max-width: 20rem;">
+								<img src="images/Roku.jpg">
+								<div class="card-body">
+									<h4 class="card-title">RS6</h4>
+									<p class="card-text">RS6はレインボーシックスシージの略でこのゲームをやりこんでいる人なら知っている略称です。このゲームはOWと同じ5vs5で戦うのですが、リスポーン（蘇生）がなく一度こけると観戦画面に切り替わります。個人的にはOWよりかは治安はいいものの、一定の確率で暴言が飛び交います。メンタル面に強い人はおすすのゲームです。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--左テキスト右画像のコード-->
+			<!--携帯画像-->
+			<div class="container fade-in-out animated-border " style="max-width: 100%;" >
+				<h1 style="text-align: center;">主な戦績</h1><br>
+				<h5 style="text-align: center;">特に誇れるものはないですが一応書いておきます。（主は弱いです）</h5><br>
+				<div class="row align-items-center">
+					<!-- 左側のテキスト -->
+					<div class="col-md-6 text-center">
+						<h1>APEX</h1>
+						<h4>ソロマスターを経験しています。（現在進行形）<br>初めてマスターに行けたのはS7。<br>そこから度々マスターに行けるようになり一番難しいと言われているs12のマスターバッチを持っています。 <br>今はゲーミングPCを買い、CS機から移行する形になりましたが先日PC初マスターを踏むことができました。</h4>
+					</div>
+					<!-- 右側の画像 -->
+					<div class="col-md-6 text-center">
+						<img src="images/APEXマスター.png" alt="APEXマスターの画像" class="img-fluid">
+					</div>
+				</div>
+			</div>
+
+			<div class="container fade-in-out animated-border" style="max-width: 100%;">
+				<div class="row align-items-center">
+					<!-- 左側の画像 -->
+					<div class="col-md-6">
+						<img src="images/スクリーンショット 2024-10-24 11.40.03.png"  alt="オーバーウォッチトップ500の画像" class="img-fluid">
+					</div>
+					<!-- 右側のテキスト -->
+					<div class="col-md-6 text-center">
+						<h1>OWERWACHI</h1>
+						<h4>オーバーウォッチではCS機でソロ世界TOP500位を維持した経験があります。PCではこのゲームをやっていませんがキーボードに慣れてきたら挑戦してみようと思います。<br></h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="container fade-in-out animated-border" style="max-width: 100%;">
+				<div class="row align-items-center">
+					<!-- 左側のテキスト -->
+					<div class="col-md-6 text-center">
+						<h1>RS6</h1>
+						<h4>虹録では、初期の頃は全く勝てなかったのですが、エメラルド帯が追加された時に体がボロボロになるまでゲームをしてようやくエメラルド帯に入れました。プラチナ帯というものがあるのですがなぜかすんなりと駆け上がれましたw</h4>
+					</div>
+					<!-- 右側の画像 -->
+					<div class="col-md-6 text-center">
+						<img src="images/Eme.png" alt="画像の説明" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!--My_about-->
+		<div class="container-fluid text-center fade-in-out" id="my_about">
+			<div class="container" id="my_about_Toumei">
+				<br><br>
+				<h2>About</h2>
+				<h5>--------★--------</h5>
+				<div class="row justify-content-center">
+					<!-- 左側のテキスト入力 -->
+					<div class="col-md-6 text-start">
+						<label for="input1" class="form-label">
+							主に自宅でFPSをやっており、ここでは紹介していませんがRPGゲームをしていたりします。<br>暇な時は原神、スタレ、ゼンレスゾーンゼロをしています。<br>自分に目標があるときはFPSを10時間ぐらいしています。<br>1日のゲーム時間平日6時間、土曜、日曜は11時間以上しています。
+						</label>
+					</div>
+					<!-- 右側の画像とアイコンの枠 -->
+					<div class="col-md-5 d-flex flex-column align-items-center">
+						<img src="images/ihihi.webp" class="img-fluid mb-2 bounce" style="width: 90px; height: 88px;" alt="Image 1">
+						<img src="images/Suta.png" class="img-fluid mb-2 bounce" style="width: 110px; height: 55px;" alt="Image 2">
+						<img src="images/ZZZ.png" class="img-fluid bounce" style="width: 72px; height: 105px;" alt="Image 3">
+						<!-- 四角形のアイコン用コンテナ -->
+						<div class="icon-container">
+							<img src="images/モグモグパイモン.png" class="moving-icon" alt="Moving Icon">
+							<img src="images/Pamu.png" class="moving-icon" alt="Moving Icon 2">
+							<img src="images/SameBonPu.png" class="moving-icon" alt="Moving Icon 3">
+							<img src="images/緑ボンプ.png" class="moving-icon" alt="Moving Icon 4">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container fade-in-out animated-border" id="shooting-game" style="max-width: 100%;">
+			<h2>シューティングゲーム</h2>
+			<p>マウスをクリックして敵を撃破しよう！</p>
+			<button id="startButton">スタート</button>
+			<canvas id="gameCanvas" width="800" height="600" style="border: 1px solid black; display: none;"></canvas>
+			<p>スコア: <span id="score">0</span></p>
+			<!-- スコアボード -->
+			<h3>スコアボード</h3>
+			<ul id="scoreList"></ul>
+		</div>
+		
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/popper.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+
+	<!-- アイコンが四角形の中で跳ね返るJavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const container = document.querySelector(".icon-container");
+			const icons = document.querySelectorAll(".moving-icon");
+
+			// コンテナのサイズを取得
+			const containerWidth = container.clientWidth;
+			const containerHeight = container.clientHeight;
+
+			// 各画像の初期位置と速度を設定
+			icons.forEach((icon, index) => {
+				const iconWidth = icon.clientWidth;
+				const iconHeight = icon.clientHeight;
+
+				// 初期位置と速度
+				let posX = Math.random() * (containerWidth - iconWidth);
+				let posY = Math.random() * (containerHeight - iconHeight);
+				let speedX = (Math.random() * 2 + 1) * (Math.random() > 0.5 ? 1 : -1);
+				let speedY = (Math.random() * 2 + 1) * (Math.random() > 0.5 ? 1 : -1);
+
+				// 各アイコンの位置を更新する関数
+				function moveIcon() {
+					posX += speedX;
+					posY += speedY;
+
+					// 左または右の壁に衝突した場合、X方向の速度を反転
+					if (posX <= 0 || posX >= containerWidth - iconWidth) {
+						speedX = -speedX;
+					}
+
+					// 上または下の壁に衝突した場合、Y方向の速度を反転
+					if (posY <= 0 || posY >= containerHeight - iconHeight) {
+						speedY = -speedY;
+					}
+
+					// 他の画像と衝突しているかチェック
+					icons.forEach((otherIcon) => {
+						if (otherIcon !== icon) {
+							const otherPosX = parseFloat(otherIcon.style.left || 0);
+							const otherPosY = parseFloat(otherIcon.style.top || 0);
+
+							const dx = posX - otherPosX;
+							const dy = posY - otherPosY;
+							const distance = Math.sqrt(dx * dx + dy * dy);
+
+							// 衝突判定
+							if (distance < iconWidth) {
+								// 衝突時に両方の速度を反転させる
+								speedX = -speedX;
+								speedY = -speedY;
+
+								// 衝突後に少し押し離す
+								const overlap = iconWidth - distance;
+								const pushFactor = overlap / distance;
+								posX += dx * pushFactor;
+								posY += dy * pushFactor;
+							}
+						}
+					});
+
+					// アイコンの位置を更新
+					icon.style.left = `${posX}px`;
+					icon.style.top = `${posY}px`;
+
+					requestAnimationFrame(moveIcon);
+				}
+
+				// 各アイコンのアニメーションを開始
+				moveIcon();
+			});
+		});
+	</script>
+</body>
+</html>
